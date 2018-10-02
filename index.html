@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta name="author" lang="fr" content="Eddy Hubert">
+    <link rel="icon" href="img/favicon.png" />
+    <title>Vel'OM, reserver votre velos GRATUITEMENT</title>
+    <meta name="description" content="Vel'OM, carte intéractive de reservation de velos sur la ville de Marseille ( ceci est un projet dans le cadre de ma formation)">
+ 
+    
+</head>
+
+<!-- Menu -->
+<body>
+    <nav class="menu">
+        <a>Vel'OM'</a>
+    </nav>
+
+
+    <!-- Slider -->
+
+    <section id="slider">
+        <div id="imgSlide"></div>
+        <div class="container">
+            <i id="previousSlide" class="fas fa-chevron-left"></i>
+            <i id="nextSlide" class="fas fa-chevron-right"></i>
+            <i id="pause" class="fas fa-pause-circle"></i>
+            <i id="play" class="fas fa-play-circle"></i>
+        </div>
+
+    </section>
+
+
+    <section id="maptable">
+        <!-- Map -->
+        <div class="map">
+            <div id="map"></div>
+ 
+
+        </div> 
+
+        <!-- Formulaire d'info des stations -->
+        <aside class="station">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="titreTable">Informations sur la station</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Status</td>
+                        <td id="status"></td>
+                    </tr>
+                    <tr>
+                        <td>Nom</td>
+                        <td id="nom"></td>
+                    </tr>        
+                    <tr>
+                        <td>Adresse</td>
+                        <td id="adresse"></td>
+                    </tr>
+                    <tr>
+                        <td>Capacité d'accueil</td>
+                        <td id="capacite"></td>
+                    </tr>  
+                    <tr>
+                        <td>Nombre de vélos disponibles</td>
+                        <td id="dispo"></td>
+                    </tr>
+                </tbody>    
+            </table>
+            <canvas id="canvas">
+            
+            </canvas>
+            <p class="conditions"></p>
+            <div id="button">
+                <form id="form">
+                    <p class="informations">
+                        <span>Votre prénom:</span>
+                        <input id="formPrenom" type="text" name="prenom"><br>
+                        <span>Votre nom:</span>
+                        <input id="formNom" type="text" name="nom"><br>
+                        <input type="submit" id="clearCanvas" value="Effacer">
+                        <input type="submit" id="validCanvas" value="Valider">
+                         
+                    </p>
+                </form>  
+                <button type="button" id="buttonReserv">Reserver</button>
+            </div>
+
+        </aside>    
+    </section>
+    <footer>
+        <div id="info">
+            <div class="infoTitre">
+                <i class="fas fa-info-circle"></i>
+                <h2>Information sur la reservation</h2>
+            </div>       
+            <p id="infoReservation">Vous n'avez pas de réservation </p> 
+            <p id="infoTime"></p>
+            <button type="button" id="boutonAnnuler">Annuler</button>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+    </script>
+    
+    <script src="js/googlemap.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/station.js"></script>
+    <script src="js/reservation.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/app.js"></script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpxEehJQZIDE_osUYK5nJnQAq9-zguYD8&callback=googleMap.initMap"></script>
+    
+    
+    
+     
+    
+    
+       
+    <!--<script src="js/googlemap.js"></script -->
+    
+    
+    
+    
+
+</body>    
+</html>

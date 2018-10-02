@@ -1,0 +1,36 @@
+BUG
+
+- Annulation qui bug quand on ne selectionne pas la station qui faut (app.js L46) 
+- Bug si on reserve une station sans la selectionner il faut recrediter la bonne station
+- Timer
+
+
+MODIFICATION & AJOUT DESIGN
+
+- Couleur du site 
+- Bouton
+- animation sur les boutons
+
+
+setInterval(function () {
+    
+    if(reservation.dureeSeconde > 0) {
+        reservation.dureeSeconde--;
+    } else if (reservation.dureeSeconde = 0)  {
+
+        reservation.dureeSeconde = Number(59);
+        reservation.dureeMinute--;
+    }
+
+
+    else {
+        
+        
+        
+    }
+    console.log("il y a " + reservation.dureeMinute + "mn et " + reservation.dureeSeconde + "s")
+}, 100);
+
+this.dateDepart = new Date().getTime(); // date au moment du lancement du compteur
+    var that = this;
+    console.log(this.dateDepart);

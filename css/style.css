@@ -1,0 +1,341 @@
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family:"roboto";
+}
+
+/* ---------- Menu Nav ---------- */
+
+
+
+.menu {
+    background-color: rgba(52, 152, 219, 1);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: white;
+}
+
+.menu > ul {
+
+    list-style: none;
+    padding-left: 550px;
+    margin: 0;
+    display: flex;
+   
+}
+
+.menu > ul > li {
+    padding-right: 20px;
+
+}
+
+.menu > ul > li > a {
+    color: white;
+    text-decoration: none;    
+}
+
+/* ---------- Slider ---------- */
+
+
+
+.images{
+    width: 100%;
+    height: 700px; 
+    
+}
+#imgSlide {
+    position: relative;
+}
+
+#slider {
+    position: relative;
+}
+#imgSlide>img{
+    
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+}
+
+/* CSS chevron slider */
+.container{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    display:-webkit-box;
+    display:flex;
+    display: -ms-flexbox;
+    -webkit-box-pack:justify;
+    -ms-flex-pack:justify;
+    justify-content:space-between;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+
+}
+
+#previousSlide, #nextSlide, #pause, #play{
+    cursor: pointer;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    
+}
+
+
+#pause {
+    position: absolute;
+    top: 90%;
+    right: 0;
+}
+
+#play {
+    position: absolute;
+    top: 90%;
+    right: 0;
+    display: none;
+}
+
+.textSlide {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+}
+
+
+/* ---------- Map & tableau ---------- */
+
+#map {
+    position: relative!important;
+    height: 900px !important;  
+    width: 100% !important;  
+     
+}
+
+#maptable {
+    display: flex;
+    background-color: #e2e2e2;
+    margin: 0px;
+    padding: 20px;
+}
+
+.map {
+    width: 66%;
+}
+
+.station {
+    width: 32%;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 5px 5px 0 0 #808080;
+    margin-left: 20px;
+}
+.table {
+    width: 100%;
+    background-color: white;
+    border-collapse:collapse;
+    padding: 20px;
+    
+}
+
+.titreTable {
+    font-size: 25px;
+    padding: 10px;
+    background-color: white;
+}
+
+td {
+    width: 50%;
+    height: 50px;
+    
+}
+
+.table tr td:first-child { padding: 10px; }
+
+tr:nth-child(odd) td {
+    background-color: rgba(52, 152, 219, 0.4)
+    
+}
+
+tr {
+    width: 20px;
+}
+/* CANVAS */
+#canvas {
+    background-color: #fdfbff;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0 0 #80808040;
+    width: 300px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    
+}
+
+.conditions {
+    color: red;
+}
+    
+
+
+/* Bouton */
+
+.informations {
+    
+    text-align: center;
+    
+}
+
+.informations input{
+    margin: 20px;
+}
+
+#form{
+    display: none;
+}
+
+input[type=text]{
+    border: 1px solid #3498db;
+}
+#buttonReserv, #clearCanvas, #boutonAnnuler, #validCanvas{
+    cursor: pointer;
+    background: #3498db;
+    color: #fdfbff;
+    width: 40%;
+    font-size: 16px;
+    border-radius: 10px 0px 10px 0px;
+    border-color: #e2e2e2;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+#buttonReserv:hover, #clearCanvas:hover, #boutonAnnuler:hover, #validCanvas:hover {
+    background: #fdfbff;
+    color: rgba(2,156,194,1);
+    border-color: rgba(2,156,194,1);
+    width: 45%;
+    font-size: 18px;
+    border-radius: 10px 0px 10px 0px;
+    padding: 10px;
+    
+}
+
+#boutonAnnuler{
+    width: 10%;
+}
+
+#boutonAnnuler:hover {
+    width: 15%;
+}
+
+
+#buttonReserv{
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+#clearCanvas {
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#validCanvas {
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+
+
+/* ---------- Footer ---------- */
+
+/* bull d'info */
+
+#info {
+    /*background-color: cornflowerblue;*/
+    background: linear-gradient(189deg, rgba(2,156,194,1) 0%, rgba(0,128,255,1) 100%); /* w3c */
+    min-width: 300px;
+    min-height: 80px;
+    color: white;
+    padding: 15px;
+}
+
+h2 {
+    font-size: 2em; 
+}
+
+.infoTitre {
+    display: flex;
+}
+.infoTitre > i {
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 3em;
+}
+#boutonAnnuler {
+    margin-top: 20px;
+    display: none;
+}
+
+/* ---------- RESPONSIVE DESIGN TABLETTE---------- */
+
+
+@media only screen and (max-width: 1024px) {
+
+    #map { 
+        height: 700px !important;  
+         
+    }
+
+    #maptable {
+        display: block;
+    }
+    
+    .map {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .station {
+        width: 60%;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+}
+
+/* ---------- RESPONSIVE DESIGN SMARTPHONE---------- */
+
+@media only screen and (max-width: 720px) {
+
+    #map { 
+        height: 500px !important;   
+         
+    }
+
+    .map {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .station {
+        width: 90%;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+}
