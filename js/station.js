@@ -1,6 +1,6 @@
-var apiKey = "7d174c9b18a2f1544500dc33d12ff86387a89953";
-var contrat = "marseille";
-var urlRequest = 'https://api.jcdecaux.com/vls/v1/stations?contract='+ contrat +'&apiKey=' + apiKey;
+var apiKey = "";
+var contrat = "";
+var urlRequest = ''
 
 function Station () {
 
